@@ -210,6 +210,14 @@ a {
   text-align: center;
   margin: 0 auto;
 }
+.direction-section {
+  display: none;
+}
+.features {
+  position: absolute;
+  top: 30rem;
+  width: 100%;
+}
 .about-body {
   background-color: #202020;
   color: white;
