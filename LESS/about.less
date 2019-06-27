@@ -61,12 +61,19 @@
     .buttons {
         display: flex;
         justify-content: center;
+
+        @media @phone {
+            flex-direction: column;
+            align-items: center;
+        }
         button {
             background-color: @iron;
             color: @glory;
             border: none;
             margin: 2rem;
             padding: 1rem;
+            width: 10rem;
+
         }
     }
 
