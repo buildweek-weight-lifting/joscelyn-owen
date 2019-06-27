@@ -3,20 +3,23 @@ class ButtonLink {
 
       this.buttonElement = buttonElement;
 
-      console.log('this.buttonElement', this.buttonElement);
   
       this.buttonData = this.buttonElement.dataset.job;
-  
+
+
+
+    
       if (this.buttonData === 'all') {
         this.people = document.querySelectorAll('.people');
-  
+
       } else {
-        this.people = document.querySelectorAll(`.people[data-job="${this.jobData}"]`);
-  
+        this.people = document.querySelectorAll(`.people[data-job="${this.buttonData}"]`);
+        console.log(this.people, 'this.people');
       }
       
     
-      this.people = Array.from(this.people).map(person => new Picture(person));
+      this.people = Array.from(this.people).map(person => {
+          return new Person(person)});
       
       this.buttonElement.addEventListener('click', () => {
         this.selectPeople();
@@ -25,10 +28,10 @@ class ButtonLink {
   
     selectPeople() {
   
-      const buttons = document.querySelectorAll('.button');
+      const buttons = document.querySelectorAll('.job-button');
   
       buttons.forEach( button => {
-        button.classList.remove('active-tab');
+        button.classList.remove('active-element');
       })
 
       const people = document.querySelectorAll('.people');
@@ -37,7 +40,7 @@ class ButtonLink {
       })
       
   
-      this.buttonElement.classList.add('active-tab');
+      this.buttonElement.classList.add('active-element');
   
       this.people.forEach(person => person.selectPerson());
     }
@@ -54,3 +57,4 @@ class ButtonLink {
   }
   
 let buttons = document.querySelectorAll('.job-button').forEach(button => new ButtonLink(button));
+

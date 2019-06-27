@@ -150,11 +150,32 @@ a {
 .about-body .top-about .logo-wrapper {
   width: 50%;
 }
+@media (max-width: 800px) {
+  .about-body .top-about .logo-wrapper {
+    width: 25%;
+  }
+}
+@media (max-width: 500px) {
+  .about-body .top-about .logo-wrapper {
+    width: 10%;
+  }
+}
 .about-body .top-about .nav-wrapper {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .about-body .top-about .nav-wrapper {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .about-body .top-about .nav-wrapper {
+    width: 90%;
+    font-size: 1.2rem;
+  }
 }
 .about-body .top-about .nav-wrapper nav a {
   padding: 1rem;
@@ -193,6 +214,6 @@ a {
 .about-body .about-footer nav a {
   padding: 1rem;
 }
-.active-tab {
+.active-element {
   border: 2px solid orange;
 }

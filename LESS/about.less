@@ -11,12 +11,30 @@
         .logo-wrapper {
             width: 50%;
 
+            @media @tablet {
+                width: 25%;
+            }
+
+            @media @phone {
+                width: 10%;
+                
+            }
+
         }
         .nav-wrapper {
             width: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @media @tablet {
+                width: 75%;
+            }
+
+            @media @phone {
+                width: 90%;
+                font-size: 1.2rem;
+            }
 
             nav a {
                 padding: 1rem;
@@ -69,6 +87,6 @@
     }
 }
 
-.active-tab {
+.active-element {
     border: 2px solid orange;
 }
