@@ -80,14 +80,20 @@
       }
     }
     .hero-content {
+
+        display: none;
       position: absolute;
       z-index: 500;
       right: 0;
       bottom: 0;
-      display: flex;
+      
       justify-content: flex-end;
       width: 64.2%;
       font-family: "Roboto", sans-serif;
+
+      @media @fromMobileDesktop {
+        display: flex;
+      }
       .content-1 {
         background-color: white;
         display: flex;

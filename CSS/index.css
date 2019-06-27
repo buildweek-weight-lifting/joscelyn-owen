@@ -228,14 +228,19 @@ html body {
   margin: 0 auto;
 }
 .top-section .hero-content {
+  display: none;
   position: absolute;
   z-index: 500;
   right: 0;
   bottom: 0;
-  display: flex;
   justify-content: flex-end;
   width: 64.2%;
   font-family: "Roboto", sans-serif;
+}
+@media (min-width: 1000px) {
+  .top-section .hero-content {
+    display: flex;
+  }
 }
 .top-section .hero-content .content-1 {
   background-color: white;
@@ -297,95 +302,6 @@ html body {
   text-align: center;
   width: 30%;
   font-weight: 500;
-}
-.direction-section {
-  display: none;
-}
-@media (min-width: 1000px) {
-  .direction-section {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    z-index: 3;
-    top: 37.75rem;
-    position: absolute;
-  }
-}
-.direction-section .links {
-  display: none;
-}
-@media (min-width: 1000px) {
-  .direction-section .links {
-    display: flex;
-    width: 100%;
-    z-index: 3;
-    position: absolute;
-  }
-  .direction-section .links .link {
-    display: none;
-  }
-  .direction-section .links .link .link1 {
-    display: none;
-  }
-  .direction-section .links .link .link2 {
-    display: none;
-  }
-  .direction-section .links .link .link3 {
-    display: none;
-  }
-  .direction-section .links .link .link3 .link-wrapper {
-    display: none;
-  }
-  .direction-section .links .link .link4 {
-    display: none;
-  }
-}
-@media (min-width: 1000px) and (min-width: 1000px) {
-  .direction-section .links .link {
-    display: flex;
-    width: 30%;
-    z-index: 3;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    position: absolute;
-  }
-}
-@media (min-width: 1000px) and (min-width: 1000px) {
-  .direction-section .links .link .link1 {
-    display: flex;
-    z-index: 3;
-    left: 0;
-  }
-}
-@media (min-width: 1000px) and (min-width: 1000px) {
-  .direction-section .links .link .link2 {
-    display: flex;
-    background-color: white;
-    z-index: 4;
-    left: 25rem;
-  }
-}
-@media (min-width: 1000px) and (min-width: 1000px) {
-  .direction-section .links .link .link3 {
-    display: flex;
-    z-index: 3;
-    left: 50rem;
-  }
-}
-@media (min-width: 1000px) and (min-width: 1000px) {
-  .direction-section .links .link .link3 .link-wrapper {
-    display: flex;
-    z-index: 4;
-  }
-}
-@media (min-width: 1000px) and (min-width: 1000px) {
-  .direction-section .links .link .link4 {
-    right: 0;
-    display: flex;
-    background: white;
-    z-index: 3;
-  }
 }
 .below-hero-image {
   position: absolute;
@@ -550,6 +466,9 @@ html body {
   font-size: 2rem;
   font-family: 'Roboto', sans-serif;
 }
+.about-body a:hover {
+  color: #FFEC42;
+}
 .about-body .top-about {
   display: flex;
   padding: 1rem;
@@ -589,6 +508,20 @@ html body {
 }
 .about-body main .title {
   text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 4.4rem;
+}
+.about-body main .title p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  text-align: center;
+  margin-bottom: 5rem;
 }
 .about-body main .all-people {
   display: flex;
@@ -610,11 +543,18 @@ html body {
 }
 .about-body .buttons button {
   background-color: #3D3D3D;
-  color: #FFEC42;
+  color: white;
   border: none;
   margin: 2rem;
   padding: 1rem;
   width: 10rem;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.about-body .buttons button:hover {
+  background-color: #FFEC42;
+  color: #1C1C1C;
 }
 .about-body .about-footer {
   margin: 2rem;
