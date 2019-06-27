@@ -176,9 +176,39 @@ a {
   justify-content: flex-start;
   border: 2px solid red;
 }
-.direction-section .title {
+.top-section .title {
   z-index: 3;
   color: white;
+  position: absolute;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  top: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid red;
+}
+.top-section .title h1 {
+  font-size: 7rem;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+}
+.top-section .title h3 {
+  font-size: 1.4rem;
+  font-family: 'Roboto Regular', sans-serif;
+  padding: 1rem;
+}
+.top-section .title button {
+  background-color: #FFEC42;
+  border: none;
+  color: #1C1C1C;
+  width: 22.5rem;
+  height: 4.9rem;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0 auto;
 }
 .about-body {
   background-color: #202020;
