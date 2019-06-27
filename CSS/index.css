@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 a {
   color: inherit;
@@ -140,7 +141,6 @@ html body {
   width: 100%;
 }
 .top-section {
-  border: 2px solid red;
   width: 100%;
 }
 .top-section .hero-image {
@@ -158,12 +158,10 @@ html body {
   position: absolute;
   display: flex;
   right: 0;
-  border: 2px solid red;
   justify-content: flex-end;
   padding: 1rem;
 }
 .top-section .logo-wrapper .logo {
-  border: 2px solid red;
   right: 0;
 }
 .top-section .menu-wrapper {
@@ -172,12 +170,10 @@ html body {
   position: absolute;
   display: flex;
   left: 0;
-  border: 2px solid red;
   padding: 1rem;
 }
 .top-section .menu-wrapper .hamburger-menu {
   justify-content: flex-start;
-  border: 2px solid red;
 }
 .top-section .title {
   z-index: 3;
@@ -189,8 +185,12 @@ html body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 2px solid red;
   width: 100%;
+}
+@media (min-width: 1000px) {
+  .top-section .title {
+    top: 15rem;
+  }
 }
 .top-section .title h1 {
   font-size: 7rem;
@@ -214,14 +214,104 @@ html body {
   text-align: center;
   margin: 0 auto;
 }
+.direction-section {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .direction-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    z-index: 3;
+    top: 37.75rem;
+    position: absolute;
+  }
+}
+.direction-section .links {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .direction-section .links {
+    display: flex;
+    width: 100%;
+    z-index: 3;
+    position: absolute;
+  }
+  .direction-section .links .link {
+    display: none;
+  }
+  .direction-section .links .link .link1 {
+    display: none;
+  }
+  .direction-section .links .link .link2 {
+    display: none;
+  }
+  .direction-section .links .link .link3 {
+    display: none;
+  }
+  .direction-section .links .link .link3 .link-wrapper {
+    display: none;
+  }
+  .direction-section .links .link .link4 {
+    display: none;
+  }
+}
+@media (min-width: 1000px) and (min-width: 1000px) {
+  .direction-section .links .link {
+    display: flex;
+    width: 30%;
+    z-index: 3;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    position: absolute;
+  }
+}
+@media (min-width: 1000px) and (min-width: 1000px) {
+  .direction-section .links .link .link1 {
+    display: flex;
+    z-index: 3;
+    left: 0;
+  }
+}
+@media (min-width: 1000px) and (min-width: 1000px) {
+  .direction-section .links .link .link2 {
+    display: flex;
+    background-color: white;
+    z-index: 4;
+    left: 25rem;
+  }
+}
+@media (min-width: 1000px) and (min-width: 1000px) {
+  .direction-section .links .link .link3 {
+    display: flex;
+    z-index: 3;
+    left: 50rem;
+  }
+}
+@media (min-width: 1000px) and (min-width: 1000px) {
+  .direction-section .links .link .link3 .link-wrapper {
+    display: flex;
+    z-index: 4;
+  }
+}
+@media (min-width: 1000px) and (min-width: 1000px) {
+  .direction-section .links .link .link4 {
+    right: 0;
+    display: flex;
+    background: white;
+    z-index: 3;
+  }
+}
 .below-hero-image {
   position: absolute;
-  border: 2px solid red;
   top: 85rem;
   width: 100%;
 }
-.below-hero-image .direction-section {
-  display: none;
+@media (min-width: 700px) {
+  .below-hero-image {
+    top: 110rem;
+  }
 }
 .below-hero-image .features {
   top: 30rem;
@@ -229,19 +319,145 @@ html body {
 }
 .below-hero-image .features .what-you-get {
   text-align: center;
-  border: 2px solid red;
   width: 100%;
 }
+.below-hero-image .features .what-you-get h2 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.6rem;
+  line-height: 5.3rem;
+}
+.below-hero-image .features .what-you-get h3 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  text-align: center;
+  padding: 1rem;
+}
 .below-hero-image .features .examples-of-features {
-  width: 100%;
-  border: 2px solid red;
+  width: 95%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media (min-width: 1000px) {
+  .below-hero-image .features .examples-of-features {
+    flex-direction: row;
+  }
 }
 .below-hero-image .features .examples-of-features .feature {
   width: 100%;
-  border: 2px solid red;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 .below-hero-image .features .examples-of-features .feature img {
+  width: 90%;
+}
+.get-started {
   width: 100%;
+  text-align: center;
+}
+.get-started .rectangle-image {
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.get-started .iphone-left {
+  z-index: 2;
+  width: 50%;
+  position: absolute;
+  bottom: 50rem;
+  left: 4rem;
+}
+@media (min-width: 700px) {
+  .get-started .iphone-left {
+    width: 40%;
+  }
+}
+@media (min-width: 1000px) {
+  .get-started .iphone-left {
+    width: 30%;
+    bottom: 15rem;
+  }
+}
+.get-started .iphone-right {
+  z-index: 2;
+  width: 50%;
+  position: absolute;
+  bottom: 50rem;
+  right: 6rem;
+}
+@media (min-width: 700px) {
+  .get-started .iphone-right {
+    width: 40%;
+  }
+}
+@media (min-width: 1000px) {
+  .get-started .iphone-right {
+    width: 30%;
+    bottom: 15rem;
+  }
+}
+.get-started .text {
+  z-index: 3;
+  width: 100%;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  bottom: 40rem;
+  position: absolute;
+}
+.get-started .text button {
+  background-color: #FFEC42;
+  border: none;
+  color: #1C1C1C;
+  width: 22.5rem;
+  height: 4.9rem;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+.landing-footer {
+  background-color: #202020;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+}
+.landing-footer nav {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1000px) {
+  .landing-footer nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.landing-footer nav a {
+  margin: 1rem;
 }
 .about-body {
   background-color: #202020;
