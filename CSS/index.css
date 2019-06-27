@@ -149,6 +149,37 @@ a {
   height: 100vh;
   object-fit: cover;
 }
+.top-section .logo-wrapper {
+  width: 25%;
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  right: 0;
+  border: 2px solid red;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+.top-section .logo-wrapper .logo {
+  border: 2px solid red;
+  right: 0;
+}
+.top-section .menu-wrapper {
+  width: 25%;
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  left: 0;
+  border: 2px solid red;
+  padding: 1rem;
+}
+.top-section .menu-wrapper .hamburger-menu {
+  justify-content: flex-start;
+  border: 2px solid red;
+}
+.direction-section .title {
+  z-index: 3;
+  color: white;
+}
 .about-body {
   background-color: #202020;
   color: white;
