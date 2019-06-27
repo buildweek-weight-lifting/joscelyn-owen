@@ -193,3 +193,6 @@ a {
 .about-body .about-footer nav a {
   padding: 1rem;
 }
+.active-tab {
+  border: 2px solid orange;
+}
