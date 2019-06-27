@@ -136,6 +136,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+html body {
+  width: 100%;
+}
 .top-section {
   border: 2px solid red;
   width: 100%;
@@ -187,6 +190,7 @@ a {
   flex-direction: column;
   justify-content: center;
   border: 2px solid red;
+  width: 100%;
 }
 .top-section .title h1 {
   font-size: 7rem;
@@ -210,12 +214,33 @@ a {
   text-align: center;
   margin: 0 auto;
 }
-.direction-section {
+.below-hero-image {
+  position: absolute;
+  border: 2px solid red;
+  top: 85rem;
+  width: 100%;
+}
+.below-hero-image .direction-section {
   display: none;
 }
-.features {
-  position: absolute;
+.below-hero-image .features {
   top: 30rem;
+  width: 100%;
+}
+.below-hero-image .features .what-you-get {
+  text-align: center;
+  border: 2px solid red;
+  width: 100%;
+}
+.below-hero-image .features .examples-of-features {
+  width: 100%;
+  border: 2px solid red;
+}
+.below-hero-image .features .examples-of-features .feature {
+  width: 100%;
+  border: 2px solid red;
+}
+.below-hero-image .features .examples-of-features .feature img {
   width: 100%;
 }
 .about-body {
