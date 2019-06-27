@@ -52,7 +52,7 @@
         position: absolute;
         text-align: center;
         font-family: 'Roboto', sans-serif;
-        top: 30rem;
+        top: 15rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -67,6 +67,9 @@
         font-size: 7rem;
         font-weight: bold;
         font-family: 'Oswald', sans-serif;
+        @media @fromMobileDesktop{
+            padding-right: 50rem;
+        }
 
 
         }
@@ -75,6 +78,10 @@
             font-size: 1.4rem;
             font-family: 'Roboto Regular', sans-serif;
             padding: 1rem;
+
+            @media @fromMobileDesktop {
+                padding-right: 45rem;
+            }
         }
         button {
             background-color: @glory;
@@ -87,6 +94,11 @@
             font-size: 1.6rem;
             text-align: center;
             margin: 0 auto;
+
+            @media @fromMobileDesktop {
+                margin-right: 85rem;
+                margin-top: 5rem;
+            }
 
           }
     }

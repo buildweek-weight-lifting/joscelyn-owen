@@ -181,7 +181,7 @@ html body {
   position: absolute;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  top: 30rem;
+  top: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -197,10 +197,20 @@ html body {
   font-weight: bold;
   font-family: 'Oswald', sans-serif;
 }
+@media (min-width: 1000px) {
+  .top-section .title h1 {
+    padding-right: 50rem;
+  }
+}
 .top-section .title h3 {
   font-size: 1.4rem;
   font-family: 'Roboto Regular', sans-serif;
   padding: 1rem;
+}
+@media (min-width: 1000px) {
+  .top-section .title h3 {
+    padding-right: 45rem;
+  }
 }
 .top-section .title button {
   background-color: #FFEC42;
@@ -213,6 +223,12 @@ html body {
   font-size: 1.6rem;
   text-align: center;
   margin: 0 auto;
+}
+@media (min-width: 1000px) {
+  .top-section .title button {
+    margin-right: 85rem;
+    margin-top: 5rem;
+  }
 }
 .direction-section {
   display: none;
