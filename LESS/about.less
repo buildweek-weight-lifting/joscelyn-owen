@@ -3,21 +3,17 @@
     color: white;
     padding: 1rem;
     font-size: 2rem;
-    border: 2px solid red;
     font-family: 'Roboto', sans-serif;
 
     .top-about {
         display: flex;
-        border: 2px solid red;
         padding: 1rem;
         .logo-wrapper {
             width: 50%;
-            border: 2px solid red;
 
         }
         .nav-wrapper {
             width: 50%;
-            border: 2px solid red;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -30,8 +26,45 @@
 
     main {
         .title {
-            border: 2px solid red;
             text-align: center;
         }
+
+        .all-people {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .people {
+                padding: 1rem;
+            }
+        }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        button {
+            background-color: @iron;
+            color: @glory;
+            border: none;
+            margin: 2rem;
+            padding: 1rem;
+        }
+    }
+
+    .about-footer {
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+        nav {
+            padding: 1rem;
+            a {
+                padding: 1rem;
+            }
+        }
+
+
     }
 }

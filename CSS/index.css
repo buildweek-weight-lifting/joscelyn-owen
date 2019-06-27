@@ -141,21 +141,17 @@ a {
   color: white;
   padding: 1rem;
   font-size: 2rem;
-  border: 2px solid red;
   font-family: 'Roboto', sans-serif;
 }
 .about-body .top-about {
   display: flex;
-  border: 2px solid red;
   padding: 1rem;
 }
 .about-body .top-about .logo-wrapper {
   width: 50%;
-  border: 2px solid red;
 }
 .about-body .top-about .nav-wrapper {
   width: 50%;
-  border: 2px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,6 +160,36 @@ a {
   padding: 1rem;
 }
 .about-body main .title {
-  border: 2px solid red;
   text-align: center;
+}
+.about-body main .all-people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about-body main .all-people .people {
+  padding: 1rem;
+}
+.about-body .buttons {
+  display: flex;
+  justify-content: center;
+}
+.about-body .buttons button {
+  background-color: #3D3D3D;
+  color: #FFEC42;
+  border: none;
+  margin: 2rem;
+  padding: 1rem;
+}
+.about-body .about-footer {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.about-body .about-footer nav {
+  padding: 1rem;
+}
+.about-body .about-footer nav a {
+  padding: 1rem;
 }
