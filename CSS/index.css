@@ -164,6 +164,19 @@ html body {
 .top-section .logo-wrapper .logo {
   right: 0;
 }
+@media (min-width: 1000px) {
+  .top-section .logo-wrapper .logo {
+    display: none;
+  }
+}
+.top-section .logo-wrapper .white-logo {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .top-section .logo-wrapper .white-logo {
+    display: flex;
+  }
+}
 .top-section .menu-wrapper {
   width: 25%;
   z-index: 2;
@@ -180,8 +193,8 @@ html body {
   color: white;
   position: absolute;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
-  top: 15rem;
+  font-family: "Roboto", sans-serif;
+  top: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,22 +208,12 @@ html body {
 .top-section .title h1 {
   font-size: 7rem;
   font-weight: bold;
-  font-family: 'Oswald', sans-serif;
-}
-@media (min-width: 1000px) {
-  .top-section .title h1 {
-    padding-right: 50rem;
-  }
+  font-family: "Oswald", sans-serif;
 }
 .top-section .title h3 {
   font-size: 1.4rem;
-  font-family: 'Roboto Regular', sans-serif;
+  font-family: "Roboto Regular", sans-serif;
   padding: 1rem;
-}
-@media (min-width: 1000px) {
-  .top-section .title h3 {
-    padding-right: 45rem;
-  }
 }
 .top-section .title button {
   background-color: #FFEC42;
@@ -224,11 +227,76 @@ html body {
   text-align: center;
   margin: 0 auto;
 }
-@media (min-width: 1000px) {
-  .top-section .title button {
-    margin-right: 85rem;
-    margin-top: 5rem;
-  }
+.top-section .hero-content {
+  position: absolute;
+  z-index: 500;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 64.2%;
+  font-family: "Roboto", sans-serif;
+}
+.top-section .hero-content .content-1 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.top-section .hero-content .content-1 .content1-container {
+  width: 68%;
+}
+.top-section .hero-content .content-1 .content1-container h6 {
+  font-size: 1rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+.top-section .hero-content .content-1 .content1-container p {
+  margin: 0;
+  margin-top: 5%;
+}
+.top-section .hero-content .content-2 {
+  background-image: url("../IMG/runner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top-section .hero-content .content-2 .content2-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 70%;
+}
+.top-section .hero-content .content-2 .content2-container h6 {
+  color: white;
+  text-align: left;
+  margin: 0;
+  margin-top: 20%;
+  font-size: 1rem;
+  margin-bottom: 4%;
+}
+.top-section .hero-content .content-2 .content2-container p {
+  color: white;
+  margin: 0;
+}
+.top-section .hero-content .content-2 .content2-container .see-features {
+  color: white;
+  text-align: right;
+  margin-bottom: 8%;
+  font-weight: 500;
+  padding-top: 8%;
+}
+.top-section .hero-content .content-3 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  font-weight: 500;
 }
 .direction-section {
   display: none;
@@ -326,7 +394,7 @@ html body {
 }
 @media (min-width: 700px) {
   .below-hero-image {
-    top: 110rem;
+    top: 78rem;
   }
 }
 .below-hero-image .features {
@@ -339,14 +407,14 @@ html body {
 }
 .below-hero-image .features .what-you-get h2 {
   text-align: center;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 3.6rem;
   line-height: 5.3rem;
 }
 .below-hero-image .features .what-you-get h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 2rem;
