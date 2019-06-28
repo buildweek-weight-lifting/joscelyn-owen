@@ -1,157 +1,63 @@
-.direction-section {
-    display: none;
-
-    @media @fromMobileDesktop {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        z-index: 3;
-        top: 37.75rem;
-        position: absolute;
-    }
-
-    .links {
-        display: none;
-        @media @fromMobileDesktop {
-            display: flex;
-            width: 100%;
-            z-index: 3;
-            position: absolute;
-
-
-            .link {
-                display: none;
-                @media @fromMobileDesktop {
-                    display: flex;
-                    width: 30%;
-                    z-index: 3;
-                    color: white;
-                    font-family: 'Roboto', sans-serif;
-                    font-size: 1.2rem;
-                    position: absolute;
-  
-                }
-
-            .link1 {
-                display: none;
-                @media @fromMobileDesktop {
-                    display: flex;
-                    z-index: 3;
-                    left: 0;
-                }
-            }
-
-            .link2 {
-                display: none;
-                @media @fromMobileDesktop{
-                    display: flex;
-                    background-color: white;
-                    z-index: 4;
-                    left: 25rem;
-
-                }
-
-            }
-            .link3 {
-                display: none;
-                @media @fromMobileDesktop{
-                    display: flex;
-                    z-index: 3;
-                    left: 50rem;
-                }
-                .link-wrapper {
-                    display: none;
-                    @media @fromMobileDesktop {
-                        display: flex;
-                        z-index: 4;
-                        
-                    }
-                }
-
-            }
-            .link4 {
-                display: none;
-                @media @fromMobileDesktop{
-                    right: 0;
-                    display: flex;
-                    background: white;
-                    z-index: 3;
-                }
-
-            }
-            }
-        }
-    }
-}
-
 
 .below-hero-image {
     position: absolute;
     top: 85rem;
     width: 100%;
-
+  
     @media @fromMobileTablet {
-        top: 110rem;
+      top: 78rem;
     }
-
+  
     .features {
-        top: 30rem;
+      top: 30rem;
+      width: 100%;
+  
+      .what-you-get {
+        text-align: center;
+  
         width: 100%;
-
-        .what-you-get {
-            text-align: center;
-
-            width: 100%;
-
-            h2 {
-
-                text-align: center;
-                font-family: 'Oswald', sans-serif;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 3.6rem;
-                line-height: 5.3rem;
-
-            }
-
-            h3 {
-
-                font-family: 'Roboto', sans-serif;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 2rem;
-                line-height: 2.3rem;
-                text-align: center;
-                padding: 1rem;
-
-            }
+  
+        h2 {
+          text-align: center;
+          font-family: "Oswald", sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 3.6rem;
+          line-height: 5.3rem;
         }
-
-        .examples-of-features {
-            width: 95%;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin: 0 auto;
-
-            @media @fromMobileDesktop {
-                flex-direction: row;
-            }
-
-            .feature {
-                width: 100%;
-                padding-top: 1rem;
-                padding-bottom: 2rem;
-                
-
-
-                img {
-                    width: 90%;
-                }
-            }
+  
+        h3 {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 2rem;
+          line-height: 2.3rem;
+          text-align: center;
+          padding: 1rem;
         }
+      }
+  
+      .examples-of-features {
+        width: 95%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+  
+        @media @fromMobileDesktop {
+          flex-direction: row;
+        }
+  
+        .feature {
+          width: 100%;
+          padding-top: 1rem;
+          padding-bottom: 2rem;
+  
+          img {
+            width: 90%;
+          }
+        }
+      }
     }
-
-
-}
+  }
