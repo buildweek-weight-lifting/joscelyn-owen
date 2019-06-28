@@ -1,3 +1,4 @@
+console.log('hello');
 class ButtonLink {
     constructor(buttonElement) {
 
@@ -58,3 +59,10 @@ class ButtonLink {
   
 let buttons = document.querySelectorAll('.job-button').forEach(button => new ButtonLink(button));
 
+let dropdown = document.querySelector('.dropdown-menu');
+
+dropdown.addEventListener('click', function() {
+  let content = document.querySelector('.dropdown-content');
+  content.classList.toggle('display-dropdown');
+  console.log("you clicked");
+})
