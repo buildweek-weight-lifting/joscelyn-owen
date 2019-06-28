@@ -330,7 +330,12 @@ html body {
 }
 @media (min-width: 700px) {
   .below-hero-image {
-    top: 78rem;
+    top: 130rem;
+  }
+}
+@media (min-width: 1000px) {
+  .below-hero-image {
+    top: 80rem;
   }
 }
 .below-hero-image .features {
@@ -594,7 +599,7 @@ html body {
 .display-dropdown {
   display: flex;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   flex-direction: column;
   background: #202020;
   position: absolute;
@@ -603,5 +608,12 @@ html body {
   z-index: 5;
   color: white;
   border: 2px solid black;
-  width: 25%;
+  width: 40%;
+}
+.display-dropdown a {
+  padding: 1rem;
+}
+.display-dropdown a:hover {
+  background: #FFEC42;
+  color: black;
 }
