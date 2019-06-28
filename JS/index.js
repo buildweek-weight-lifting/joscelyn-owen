@@ -1,4 +1,4 @@
-console.log('hello');
+
 class ButtonLink {
     constructor(buttonElement) {
 
@@ -15,7 +15,7 @@ class ButtonLink {
 
       } else {
         this.people = document.querySelectorAll(`.people[data-job="${this.buttonData}"]`);
-        console.log(this.people, 'this.people');
+
       }
       
     
@@ -64,5 +64,5 @@ let dropdown = document.querySelector('.dropdown-menu');
 dropdown.addEventListener('click', function() {
   let content = document.querySelector('.dropdown-content');
   content.classList.toggle('display-dropdown');
-  console.log("you clicked");
+
 })
