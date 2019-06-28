@@ -1,6 +1,17 @@
 .top-section {
     width: 100%;
 
+    .dropdown .dropdown-menu {
+      position: absolute;
+      z-index: 3;
+      left: 0;
+      margin: 1rem;
+
+      @media @fromMobileDesktop {
+        display: none;
+      }
+    }
+
     .nav-wrapper {
 
       display: none;
@@ -58,20 +69,9 @@
           }
       }
     }
-    .menu-wrapper {
-      width: 25%;
-      z-index: 2;
-      position: absolute;
-      display: flex;
-      left: 0;
-      padding: 1rem;
-      .hamburger-menu {
-        justify-content: flex-start;
-        @media @fromMobileDesktop {
-          display: none;
-        }
-      }
-    }
+
+
+
     .title {
       z-index: 3;
       color: white;
