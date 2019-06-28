@@ -61,8 +61,11 @@ let buttons = document.querySelectorAll('.job-button').forEach(button => new But
 
 let dropdown = document.querySelector('.dropdown-menu');
 
+
 dropdown.addEventListener('click', function() {
   let content = document.querySelector('.dropdown-content');
   content.classList.toggle('display-dropdown');
 
 })
+
+

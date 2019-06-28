@@ -613,3 +613,7 @@ html body {
 .display-dropdown a {
   padding: 1rem;
 }
+.display-dropdown a:hover {
+  background: #FFEC42;
+  color: black;
+}
