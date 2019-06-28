@@ -143,6 +143,26 @@ html body {
 .top-section {
   width: 100%;
 }
+.top-section .nav-wrapper {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .top-section .nav-wrapper {
+    position: absolute;
+    display: flex;
+    z-index: 3;
+    color: white;
+    padding: 2rem;
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 1.4rem;
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) and (min-width: 1000px) {
+  .top-section .nav-wrapper nav a {
+    padding: 1rem;
+  }
+}
 .top-section .hero-image {
   position: absolute;
   z-index: 1;
@@ -187,6 +207,11 @@ html body {
 }
 .top-section .menu-wrapper .hamburger-menu {
   justify-content: flex-start;
+}
+@media (min-width: 1000px) {
+  .top-section .menu-wrapper .hamburger-menu {
+    display: none;
+  }
 }
 .top-section .title {
   z-index: 3;
@@ -373,7 +398,7 @@ html body {
   z-index: 2;
   width: 50%;
   position: absolute;
-  bottom: 50rem;
+  bottom: 40rem;
   left: 4rem;
 }
 @media (min-width: 700px) {
@@ -391,7 +416,7 @@ html body {
   z-index: 2;
   width: 50%;
   position: absolute;
-  bottom: 50rem;
+  bottom: 40rem;
   right: 6rem;
 }
 @media (min-width: 700px) {
@@ -414,7 +439,7 @@ html body {
   font-weight: bold;
   font-size: 2rem;
   line-height: 3.2rem;
-  bottom: 40rem;
+  bottom: 25rem;
   position: absolute;
 }
 .get-started .text button {

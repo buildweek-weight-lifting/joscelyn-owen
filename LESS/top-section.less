@@ -1,5 +1,32 @@
 .top-section {
     width: 100%;
+
+    .nav-wrapper {
+
+      display: none;
+
+      @media @fromMobileDesktop {
+        position: absolute;
+        display: flex;
+        z-index: 3;
+        color: white;
+        padding: 2rem;
+        font-family: 'Roboto Medium', sans-serif;
+        font-size: 1.4rem;
+        width: 50%;
+
+        nav {
+
+          a {
+            @media @fromMobileDesktop {
+              padding: 1rem;
+            }
+          }
+
+        }
+      }
+      
+    }
     .hero-image {
       position: absolute;
       z-index: 1;
@@ -40,6 +67,9 @@
       padding: 1rem;
       .hamburger-menu {
         justify-content: flex-start;
+        @media @fromMobileDesktop {
+          display: none;
+        }
       }
     }
     .title {
