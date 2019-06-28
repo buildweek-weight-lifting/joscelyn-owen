@@ -330,7 +330,12 @@ html body {
 }
 @media (min-width: 700px) {
   .below-hero-image {
-    top: 78rem;
+    top: 130rem;
+  }
+}
+@media (min-width: 1000px) {
+  .below-hero-image {
+    top: 80rem;
   }
 }
 .below-hero-image .features {
