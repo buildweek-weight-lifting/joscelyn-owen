@@ -12,18 +12,13 @@
   .iphone-left {
     display: none;
 
-    @media @fromMobileTablet {
-      width: 40%;
-      z-index: 2;
-      width: 50%;
-      position: absolute;
-      bottom: 40rem;
-      left: 4rem;
-      display: block;
-    }
     @media @fromMobileDesktop {
       width: 30%;
       bottom: 15rem;
+      left: 4rem;
+      display: block;
+      z-index: 2;
+      position: absolute;
     }
   }
 
@@ -31,18 +26,18 @@
     display: none;
 
     @media @fromMobileTablet {
-      width: 40%;
-      z-index: 2;
-      width: 50%;
-      position: absolute;
-      bottom: 40rem;
-      right: 6rem;
-      display: block;
     }
 
     @media @fromMobileDesktop {
       width: 30%;
       bottom: 15rem;
+
+      z-index: 2;
+
+      position: absolute;
+
+      right: 6rem;
+      display: block;
     }
   }
 
