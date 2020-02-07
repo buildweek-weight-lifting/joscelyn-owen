@@ -164,9 +164,12 @@ html body {
     z-index: 3;
     color: white;
     padding: 2rem;
-    font-family: 'Roboto Medium', sans-serif;
+    font-family: "Roboto Medium", sans-serif;
     font-size: 1.4rem;
     width: 50%;
+  }
+  .top-section .nav-wrapper nav a:hover {
+    color: #FFEC42;
   }
 }
 @media (min-width: 1000px) and (min-width: 1000px) {
@@ -246,6 +249,11 @@ html body {
   font-size: 1.6rem;
   text-align: center;
   margin: 0 auto;
+}
+.top-section .title button:hover {
+  background-color: #1C1C1C;
+  border: 1px solid #FFEC42;
+  color: #FFEC42;
 }
 .top-section .hero-content {
   display: none;
@@ -395,15 +403,17 @@ html body {
   object-fit: cover;
 }
 .get-started .iphone-left {
-  z-index: 2;
-  width: 50%;
-  position: absolute;
-  bottom: 40rem;
-  left: 4rem;
+  display: none;
 }
 @media (min-width: 700px) {
   .get-started .iphone-left {
     width: 40%;
+    z-index: 2;
+    width: 50%;
+    position: absolute;
+    bottom: 40rem;
+    left: 4rem;
+    display: block;
   }
 }
 @media (min-width: 1000px) {
@@ -413,15 +423,17 @@ html body {
   }
 }
 .get-started .iphone-right {
-  z-index: 2;
-  width: 50%;
-  position: absolute;
-  bottom: 40rem;
-  right: 6rem;
+  display: none;
 }
 @media (min-width: 700px) {
   .get-started .iphone-right {
     width: 40%;
+    z-index: 2;
+    width: 50%;
+    position: absolute;
+    bottom: 40rem;
+    right: 6rem;
+    display: block;
   }
 }
 @media (min-width: 1000px) {
@@ -434,7 +446,7 @@ html body {
   z-index: 3;
   width: 100%;
   color: white;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 2rem;
@@ -454,13 +466,18 @@ html body {
   text-align: center;
   margin: 1rem auto;
 }
+.get-started .text button:hover {
+  background-color: #1C1C1C;
+  border: 1px solid #FFEC42;
+  color: #FFEC42;
+}
 .landing-footer {
   background-color: #202020;
   color: white;
   display: flex;
   flex-direction: column;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.4rem;
@@ -483,6 +500,9 @@ html body {
 }
 .landing-footer nav a {
   margin: 1rem;
+}
+.landing-footer nav a:hover {
+  color: #FFEC42;
 }
 .about-body {
   background-color: #202020;
