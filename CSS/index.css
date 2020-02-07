@@ -599,17 +599,23 @@ html body {
 }
 .display-dropdown {
   display: flex;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
   flex-direction: column;
   background: #202020;
   position: absolute;
   left: 0;
-  top: 3.5rem;
+  padding-top: 1.4rem;
+  top: 0rem;
   z-index: 5;
   color: white;
   border: 2px solid black;
   width: 40%;
+}
+.display-dropdown #close-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
 }
 .display-dropdown a {
   padding: 1rem;
