@@ -387,6 +387,14 @@ html body {
 .below-hero-image .features .examples-of-features .feature img {
   width: 90%;
 }
+#meet-our-team:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+#see-more-features:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
 .get-started {
   width: 100%;
   text-align: center;
