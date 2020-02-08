@@ -333,13 +333,8 @@ html body {
 }
 .below-hero-image {
   position: absolute;
-  top: 85rem;
+  top: 60rem;
   width: 100%;
-}
-@media (min-width: 1000px) {
-  .below-hero-image {
-    top: 80rem;
-  }
 }
 .below-hero-image .features {
   top: 30rem;
