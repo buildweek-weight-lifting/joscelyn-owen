@@ -169,7 +169,7 @@ html body {
     width: 50%;
   }
   .top-section .nav-wrapper nav a:hover {
-    color: #FFEC42;
+    color: #ffec42;
   }
 }
 @media (min-width: 1000px) and (min-width: 1000px) {
@@ -183,7 +183,7 @@ html body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   object-fit: cover;
 }
 .top-section .logo-wrapper {
@@ -239,9 +239,9 @@ html body {
   padding: 1rem;
 }
 .top-section .title button {
-  background-color: #FFEC42;
+  background-color: #ffec42;
   border: none;
-  color: #1C1C1C;
+  color: #1c1c1c;
   width: 22.5rem;
   height: 4.9rem;
   text-decoration: none;
@@ -251,9 +251,9 @@ html body {
   margin: 0 auto;
 }
 .top-section .title button:hover {
-  background-color: #1C1C1C;
-  border: 1px solid #FFEC42;
-  color: #FFEC42;
+  background-color: #1c1c1c;
+  border: 1px solid #ffec42;
+  color: #ffec42;
 }
 .top-section .hero-content {
   display: none;
@@ -333,7 +333,7 @@ html body {
 }
 .below-hero-image {
   position: absolute;
-  top: 60rem;
+  top: 150%;
   width: 100%;
 }
 .below-hero-image .features {
@@ -439,9 +439,9 @@ html body {
   position: absolute;
 }
 .get-started .text button {
-  background-color: #FFEC42;
+  background-color: #ffec42;
   border: none;
-  color: #1C1C1C;
+  color: #1c1c1c;
   width: 22.5rem;
   height: 4.9rem;
   text-decoration: none;
@@ -451,9 +451,9 @@ html body {
   margin: 1rem auto;
 }
 .get-started .text button:hover {
-  background-color: #1C1C1C;
-  border: 1px solid #FFEC42;
-  color: #FFEC42;
+  background-color: #1c1c1c;
+  border: 1px solid #ffec42;
+  color: #ffec42;
 }
 .landing-footer {
   background-color: #202020;
@@ -486,7 +486,7 @@ html body {
   margin: 1rem;
 }
 .landing-footer nav a:hover {
-  color: #FFEC42;
+  color: #ffec42;
 }
 .about-body {
   background-color: #202020;
@@ -496,7 +496,7 @@ html body {
   font-family: 'Roboto', sans-serif;
 }
 .about-body a:hover {
-  color: #FFEC42;
+  color: #ffec42;
 }
 .about-body .top-about {
   display: flex;
@@ -571,7 +571,7 @@ html body {
   }
 }
 .about-body .buttons button {
-  background-color: #3D3D3D;
+  background-color: #3d3d3d;
   color: white;
   border: none;
   margin: 2rem;
@@ -582,8 +582,8 @@ html body {
   font-weight: bold;
 }
 .about-body .buttons button:hover {
-  background-color: #FFEC42;
-  color: #1C1C1C;
+  background-color: #ffec42;
+  color: #1c1c1c;
 }
 .about-body .about-footer {
   margin: 2rem;
@@ -624,6 +624,6 @@ html body {
   padding: 1rem;
 }
 .display-dropdown a:hover {
-  background: #FFEC42;
+  background: #ffec42;
   color: black;
 }
